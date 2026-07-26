@@ -18,12 +18,7 @@ async def s(m: types.Message):
 
 @dp.message(Command("help"))
 async def h(m: types.Message):
-    await m.answer("Команды:\n/calculator пример — решает пример\n/Nftinfo имя или ссылка — инфо о NFT\n/course — курсы валют и крипты\n/about — о боте")
-
-
-@dp.message(Command("about"))
-async def about(m: types.Message):
-    await m.answer("🤖 Бот-помощник по крипте и NFT\n📊 Курсы, калькулятор, инфо о NFT\n⚡ Создано на aiogram 3")
+    await m.answer("Команды:\n/calculator пример — решает пример\n/Nftinfo имя или ссылка — инфо о NFT\n/course — курсы валют и крипты")
 
 
 @dp.message(Command("calculator", "calc"))
