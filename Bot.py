@@ -13,7 +13,7 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def s(m: types.Message):
-    await m.answer("Приветствую! Я бот для помощи по криптовалюте и НФТ. /help для полного доступа команд.")
+    await m.answer("👋Приветствую! Я бот для помощи по криптовалюте и НФТ. /help для полного доступа команд.")
 
 
 @dp.message(Command("help"))
